@@ -1,0 +1,49 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUPER BIKES</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container" id="bike">
+      <nav>
+        <img src="logo.png" class="logo>"
+        <a href="#" class="btn">Test Drive</a>
+      </nav>
+      <div class="content">
+        <h2>THE BMW</h2>
+        <h1>310 GS</h1>
+        <p class="subheading">
+            Engine capactiy: 313cc;
+            Mileage: 29.26kmpl;
+            Max.torque: 28NM @ 7,500 rpm;
+        </p>
+        <h3>Choose your colour</h3>
+        <div class="colour-select">
+            <div id="red"></div>
+            <div id="blue"></div>
+            <div id="black"></div>
+        </div>
+      </div>
+    </div>
+    
+    <script>
+        let redBtn = document.getElementById("red");
+        let blueBtn = document.getElementById("blue");
+        let blackBtn = document.getElementById("black");
+        let bike = document.getElementById("bike");
+
+
+        redBtn.onclick = function(){
+            bike.style.backgroundImage = "url(BMW5.png)";
+        }
+        blueBtn.onclick = function(){
+            bike.style.backgroundImage = "url(BMW4.png)";
+        }
+        blackBtn.onclick = function(){
+            bike.style.backgroundImage = "url(BMW6.png)";
+        }
+
+    </script>
+</body>
+</html>
